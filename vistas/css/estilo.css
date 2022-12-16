@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Fira Sans;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: hsl(192, 50%, 90%);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    color: hsl(17, 14%, 9%);
+    font-size: 1.2rem;
+}
+
+table{
+    width: 75%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table thead{
+    background-color: hsl(52, 99%, 50%);
+}
+
+table td, table th{
+    padding: 10px;
+}
+
+table tr td:first-child{
+    width: 90%;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: hsl(192, 50%, 60%);
+}
+
+table tbody td:nth-child(even){
+    display: flex;
+    justify-content: space-around;
+}
+
+table tbody tr:nth-child(even){
+    background-color: hsl(192, 50%, 70%);
+}
+
+span.anadir{
+    margin: 15px 0;
+    padding: 20px;
+    background-color: hsl(192, 100%, 37%);
+    display: block;
+}
+
+a.regresar{
+    padding: 10px;
+    background-color: hsl(192, 100%, 37%);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+form#formulario-instrucciones{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+form#formulario-instrucciones > div:nth-child(2){
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label#etiqueta-nombre{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+input#nombre-fichero{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input#fichero{
+    display: none;
+}
+
+label#boton-fichero{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    cursor: pointer;
+    background-color: hsl(52, 99%, 50%);
+    text-align: center;
+}
+
+input[type="submit"]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    cursor: pointer;
+    background-color: hsl(192, 100%, 37%);
+    text-align: center;
+    border: 0;
+}
+
+span#mensaje-modificar{
+    margin-bottom: 10px;
+}

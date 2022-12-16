@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="styleSheet" href="../vistas/css/estilo.css" type="text/css" />
+    <title>Agregar instrucciones</title>
+  </head>
+  <body>
+    <main>
+      <a href="../" class="regresar">Volver</a>
+      <form id="formulario-instrucciones" method="post" enctype="multipart/form-data">
+        <div>
+          <iframe id="mostrar-pdf" type="application/pdf" width="450px" height="600px" hidden></iframe>
+        </div>
+<!--        <div id="mostrar-pdf" hidden>-->
+<!--          <span>PDF instrucciones actual:</span>-->
+<!--          <a id="enlace-pdf" target="_blank"></a>-->
+<!--        </div>-->
+        <div>
+          <input type="file" name="fichero" accept="application/pdf" id="fichero" />
+          <span id="mensaje-modificar" hidden>Selecciona otro fichero PDF si deseas reemplazar el PDF actual</span>
+          <label for="fichero" id="boton-fichero">Cargar instrucciones</label>
+          <label for="nombre-fichero" id="etiqueta-nombre">Nombre del fichero</label>
+          <input type="text" name="nombre-fichero" id="nombre-fichero" />
+          <input type="submit" value="Guardar instrucciones" />
+        </div>
+      </form>
+    </main>
+    <script src="https://kit.fontawesome.com/f7b55e9c0a.js" crossorigin="anonymous"></script>
+  </body>
+</html>

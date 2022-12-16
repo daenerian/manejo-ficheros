@@ -1,0 +1,1 @@
+INSERT INTO instrucciones VALUES(default, 'instrucciones.pdf');
